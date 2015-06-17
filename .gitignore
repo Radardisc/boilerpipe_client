@@ -1,6 +1,5 @@
 ebin/*
 Rakefile
 pkg/*
-test/*
 tbin/*
 .eunit/*
