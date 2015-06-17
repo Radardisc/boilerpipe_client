@@ -15,3 +15,27 @@ This may incur a fee. Please contact us through github to discuss your requireme
 We have the node made (see https://github.com/Radardisc/boilerpipe_node )
 Now we want to connect to it from our erlang nodes
 
+### Build
+
+You need to get rebar
+
+rebar compile
+
+### Integrate
+
+However you decide to use this, you will need to configure the boilerpipe_node and server name in order to use it
+
+e.g.
+
+`{ boilerpipe_client, remote_server, { ServerName, NodeName } }`
+
+By default, this is
+
+`{boilerpipe, boilerpipe@Localhost}`
+
+where Localhost is your machine name
+
+### Tests
+
+There are some quick tests, however you need to work out how to set the `node name` for the eunit test suite, and the cookie to match the node
+
